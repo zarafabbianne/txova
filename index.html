@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+  <title>Txova — Entregas em Maputo</title>
+  <meta name="description" content="Comida, supermercado, farmácia e muito mais, entregue à sua porta em Maputo e Matola. Aplicação de demonstração.">
+  <meta name="theme-color" content="#EC4A1F">
+  <meta name="color-scheme" content="light">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+  <!-- iOS / Safari -->
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Txova">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)" href="icons/splash-1170x2532.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3)" href="icons/splash-1179x2556.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3)" href="icons/splash-1290x2796.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3)" href="icons/splash-1284x2778.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="icons/splash-1125x2436.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" href="icons/splash-1242x2688.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" href="icons/splash-828x1792.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="icons/splash-750x1334.png">
+  <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div id="splash" aria-hidden="true">
+    <div class="splash-logo"><img src="icons/logo.svg" alt=""></div>
+    <div class="splash-name">txova</div>
+    <div class="splash-tag">Entregas em Maputo e Matola</div>
+    <div class="splash-dots"><i></i><i></i><i></i></div>
+  </div>
+
+  <div id="app">
+    <main id="view" tabindex="-1"></main>
+    <nav id="tabbar" aria-label="Navegação principal">
+      <a href="#/" data-tab="inicio"><span class="ic" data-icon="house"></span><span>Início</span></a>
+      <a href="#/pesquisa" data-tab="pesquisa"><span class="ic" data-icon="search"></span><span>Pesquisar</span></a>
+      <a href="#/carrinho" data-tab="carrinho"><span class="ic" data-icon="shopping-bag"></span><span>Carrinho</span><b class="badge" id="cartBadge" hidden>0</b></a>
+      <a href="#/pedidos" data-tab="pedidos"><span class="ic" data-icon="receipt"></span><span>Pedidos</span></a>
+      <a href="#/perfil" data-tab="perfil"><span class="ic" data-icon="user"></span><span>Perfil</span></a>
+    </nav>
+  </div>
+
+  <div id="sheet-root"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>Esta aplicação precisa de JavaScript.</noscript>
+  <script src="assets/icons.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
